@@ -12,8 +12,11 @@ Summary of conclusion:
 The best model predicted share price movement with 63% accuracy, which was 11 percentage point above baseline. A couple of different models produced predictions around 58-60% accuracy.
 For comparison, a fund with 50-55% hit ration is considered to be a good – very  good fund, and 60% is believed to be needed for Warren Buffet. 
 (linkes from where I quote these figures:
+
 https://thehedgefundjournal.com/identifying-manager-skill/
+
 https://www.linkedin.com/pulse/high-investment-hit-rate-too-good-true-ali-chabaane
+
 https://morphicasset.com/what-batting-averages-can-tell-you-about-funds-management/)
 
 
