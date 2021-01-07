@@ -26,8 +26,8 @@ The project ended with a 20 minutes presentation. You can find the slides in thi
 ## Data gathering 
 
 The first part of the project was to gather data. I used:
--	Request, BeautifulSoup to scrape earnings call transcripts from the [fool.com](https://www.fool.com/earnings-call-transcripts/) website and parse the scrapings into relevant columns. (21k+ transcripts collected)
--	Alpha Vantage API to collect corresponding share prices (alphavantage.co)
+-	Request, BeautifulSoup to scrape earnings call transcripts from the [fool.com](https://www.fool.com/earnings-call-transcripts/) website and parse the scrapings into relevant columns. (21k+ transcripts collected).
+-	Alpha Vantage API to collect corresponding share prices (alphavantage.co).
 I matched up the transcripts with the share prices, so I could define the direction of the price movement between the call’s date closing price and the subsequent period end’s closing price (next closes working day, if weekend). I labelled the texts to “UP” and “DOWN”.
 
 
@@ -45,8 +45,8 @@ I made investigations into words used in the texts and also explored the use of 
 
 ### Pre-processing
 After splitting the transcripts to stratified train and test sets, I probed the following pre-processing combinations of the texts:
--	Using Count Vectorizer vs TF-IDF Vectorizer
--	Using all words across the train set corpus vs using the negative word list from the sentiment collection
+-	Using Count Vectorizer vs TF-IDF Vectorizer.
+-	Using all words across the train set corpus vs using the negative word list from the sentiment collection.
 -	Limiting the features based on frequency (ignoring words occurring in more than 80% of texts, or less than in 1k texts) vs no limitation.
 
 ### Models
@@ -79,19 +79,19 @@ The best model predicted share price movement with 63% accuracy, which was 11 pe
 For comparison, a fund with a 50-55% hit ratio is considered to be a good – very good fund, and 60% is believed to be needed for Warren Buffet.
 
 I found that 
--	negatively charged words alone are not as strong predictors as unrestricted word features.
--	Models based on Count vectorizer pre-processing word slightly better than the same model on TF-IDF vectorizer
--	Models worked better if words were limited by the frequency
--	Random forest worked slightly better than logistic regression
+-	Negatively charged words alone are not as strong predictors as unrestricted word features.
+-	Models based on Count vectorizer pre-processing word slightly better than the same model on TF-IDF vectorizer.
+-	Models worked better if words were limited by the frequency.
+-	Random forest worked slightly better than logistic regression.
 -	Most important features contain a reference to the time aspect.
 
-For a quick visual sum up, please see my [slides](https://github.com/tolgyirita/Capstone-EarningsCallTranscripts/blob/main/Rita_Capstone_presentation_Dec2020.pdf)
+For a quick visual sum up, please see my [slides](https://github.com/tolgyirita/Capstone-EarningsCallTranscripts/blob/main/Rita_Capstone_presentation_Dec2020.pdf).
 
 ## Future plans with the project
-- Evaluate the model performance based on a simulated portfolio 
-- Re-label my data and categorise the shares to OUTPERFOM - UNDERPERFORM compared to a global index’s movement 
-- Find a more consistent timeframe that works (52 days)
-- Explore ngrams and use stemming
+- Evaluate the model performance based on a simulated portfolio.
+- Re-label my data and categorise the shares to OUTPERFOM - UNDERPERFORM compared to a global index’s movement.
+- Find a more consistent timeframe that works (52 days).
+- Explore ngrams and use stemming.
 - Split up into more categories: 
   ~ significantly outperforms
   ~ outperforms
