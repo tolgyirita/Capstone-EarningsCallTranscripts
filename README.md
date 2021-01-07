@@ -23,6 +23,9 @@ https://morphicasset.com/what-batting-averages-can-tell-you-about-funds-manageme
 ## Code
 
 I collected my codes into one notebook where you can navigate through the different stages with the help of the Table of Contents. 
+Or you can check it through nbviewer:
+https://nbviewer.jupyter.org/github/tolgyirita/Capstone-EarningsCallTranscripts/blob/main/Rita_Capstone_notebook.ipynb
+
 
 ## Presentation
 
