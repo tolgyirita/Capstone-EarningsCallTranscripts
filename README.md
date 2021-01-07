@@ -84,3 +84,17 @@ I found that
 -	Models worked better if words were limited by the frequency
 -	Random forest worked slightly better than logistic regression
 -	Most important features contain a reference to the time aspect.
+
+For a quick visual sum up, please see my [slides](https://github.com/tolgyirita/Capstone-EarningsCallTranscripts/blob/main/Rita_Capstone_presentation_Dec2020.pdf)
+
+## Future plans with the project
+- Evaluate the model performance based on a simulated portfolio 
+- Re-label my data and categorise the shares to OUTPERFOM - UNDERPERFORM compared to a global index’s movement 
+- Find a more consistent timeframe that works (52 days)
+- Explore ngrams and use stemming
+- Split up into more categories: 
+  ~ significantly outperforms
+  ~ outperforms
+  ~ underperform
+  ~ significantly underperforms
+
