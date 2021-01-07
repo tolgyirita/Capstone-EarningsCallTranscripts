@@ -1,7 +1,8 @@
 # Capstone-EarningsCallTranscripts
+![Small](https://user-images.githubusercontent.com/67437966/103885261-a3216e80-50d7-11eb-8fcb-4d47f6b9d5a7.png)
 
+This repo covers the Capstone Project I completed during General Assembly's Data Science Immersive. 
 
-This repo covers the Capstone Project I completed during General Assembly's Data Science Immersive.
 
 ## Topic:
 Can Data Science predict movement of share prices based on how the managers talk on the quarterly earnings call? Finance analysts and investors in general spend a lot of time looking at the financial performance of companies, but can we make better predictions without spending any time on financial results, just focusing on the word choices of the management during quarterly earnings calls?
@@ -10,31 +11,22 @@ I aim to predict share price movement from the day of the earnings call to the c
 
 ## Summary of conclusion:
 The best model predicted share price movement with 63% accuracy, which was 11 percentage points above baseline. A couple of different models produced predictions around 58-60% accuracy.
-For comparison, a fund with a 50-55% hit ratio is considered to be a good – very good fund, and 60% is believed to be needed for Warren Buffet. 
-
-(linkes from where I quote these figures:
-
-https://thehedgefundjournal.com/identifying-manager-skill/
-
-https://www.linkedin.com/pulse/high-investment-hit-rate-too-good-true-ali-chabaane
-
-https://morphicasset.com/what-batting-averages-can-tell-you-about-funds-management/)
+For comparison, a fund with a 50-55% hit ratio is considered to be a [good](https://thehedgefundjournal.com/identifying-manager-skill/) – [very good](https://www.linkedin.com/pulse/high-investment-hit-rate-too-good-true-ali-chabaane) fund, and [60%](https://morphicasset.com/what-batting-averages-can-tell-you-about-funds-management/) is believed to be needed for Warren Buffet. 
 
 ## Code
 
 I collected my codes into one notebook where you can navigate through the different stages with the help of the Table of Contents. 
-Or you can check it through nbviewer:
-https://nbviewer.jupyter.org/github/tolgyirita/Capstone-EarningsCallTranscripts/blob/main/Rita_Capstone_notebook.ipynb
+Or you can check it through [nbviewer:](https://nbviewer.jupyter.org/github/tolgyirita/Capstone-EarningsCallTranscripts/blob/main/Rita_Capstone_notebook.ipynb)
 
 
 ## Presentation
 
-The project ended with a 20 minutes presentation. You can find the slides in this repo.
+The project ended with a 20 minutes presentation. You can find the slides in this repo [here](https://github.com/tolgyirita/Capstone-EarningsCallTranscripts/blob/main/Rita_Capstone_presentation_Dec2020.pdf)
 
 ## Data gathering 
 
 The first part of the project was to gather data. I used:
--	Request, BeautifulSoup to scrape earnings call transcripts from the fool.com website (https://www.fool.com/earnings-call-transcripts/) and parse the scrapings into relevant columns. (21k+ transcripts collected)
+-	Request, BeautifulSoup to scrape earnings call transcripts from the [fool.com](https://www.fool.com/earnings-call-transcripts/) website and parse the scrapings into relevant columns. (21k+ transcripts collected)
 -	Alpha Vantage API to collect corresponding share prices (alphavantage.co)
 I matched up the transcripts with the share prices, so I could define the direction of the price movement between the call’s date closing price and the subsequent period end’s closing price (next closes working day, if weekend). I labelled the texts to “UP” and “DOWN”.
 
@@ -46,8 +38,7 @@ I cleaned the inconsistencies of transcripts when it was necessary, removed dupl
 
 ## EDA
 At this phase, I explored if there are any recognisable patterns or differences of word choices between the two categories.
-I made investigations into words used in the texts and also explored the use of negative words, based on sentiment word collection. 
-(https://sraf.nd.edu/textual-analysis/resources/#LM%20Sentiment%20Word%20Lists)
+I made investigations into words used in the texts and also explored the use of negative words, based on [sentiment word collection](https://sraf.nd.edu/textual-analysis/resources/#LM%20Sentiment%20Word%20Lists).
 
 
 ## Data pre-processing and modelling
